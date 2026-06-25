@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        box-sizing: border-box;
+        --bg:rgb(105, 128, 12);
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(5,1fr);
+        background-color: rgb(29, 225, 225);
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        align-content: center;
+
+        grid-template-areas: "A A A A A "
+                             " F F H H H"
+                             " F F H H H"
+                             " F F R R R "
+                             " U U U U U ";
+    }
+    .box{
+        background-color: var(--bg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        font-size: 50px;
+        border-radius: 20px;
+    }
+    .box:nth-child(1){
+        grid-area: A;
+    }
+    .box:nth-child(2){
+        grid-area: F;
+    }
+    .box:nth-child(3){
+        grid-area: H;
+    }
+    .box:nth-child(5){
+        grid-area: U;
+    }
+    .box:nth-child(4){
+        grid-area: R;
+    }
+
+    .box:nth-child(2) img{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+
+    
+</style>
+<body>
+
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">
+            <img src="https://i.pinimg.com/736x/b2/34/ce/b234ce65120656a883ed53c671313463.jpg" alt="">
+        </div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+
+
+    </div>
+    
+</body>
+</html>

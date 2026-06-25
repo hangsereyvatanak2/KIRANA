@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .container>button{
+        background-color: rgb(28, 18, 17);
+        padding: 10px;
+        transition: 1s ease;
+        color: aliceblue;
+    }
+    .container>.btn1:hover{
+        background-color: rgb(255, 21, 0);
+        cursor: wait;
+        transform: rotate(10000000deg);
+        transition: 1s ease;
+        border-radius: 100px 0px 100px 0px;
+    }
+    .container>.btn2:active{
+        border-radius: 100px 0px 100px 0px;
+        background-color: rgb(242, 9, 9);
+        transform: rotate(10000deg); 
+    }
+    input{
+        padding: 15px; 
+        transition: 1s ease;
+        background-color: rgb(18, 231, 160);
+    }
+    input:focus{
+        background-color: darkolivegreen;
+        color: aliceblue;
+        transition: 1s ease;
+    }
+    .button1 button:first-child{
+        background-color: red;
+    }
+    input[type="checkbox"]:checked{
+        accent-color: red;
+    }
+
+    
+
+
+</style>
+<body>
+
+    <div class="container">
+        <button class="btn1">Hover me</button>
+        <button class="btn2">Hover me</button>
+        <input type="text">
+        <a href="https://www.youtube.com/">visit</a>
+
+        <div class="button1">
+            <button>Click me</button>
+            <button>Click me</button>
+            <button>Click me</button>
+        </div>
+        <input type="checkbox">
+
+    </div>
+    
+</body>
+</html>
